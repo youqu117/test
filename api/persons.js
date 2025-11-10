@@ -1,5 +1,8 @@
 import { connectToDatabase } from './mongodb';
+// 需要添加导入
+import { ObjectId } from 'mongodb';
 
+// 在文件顶部添加
 export default async function handler(req, res) {
   // 设置CORS头
   res.setHeader('Access-Control-Allow-Credentials', true);
